@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+
+    <title>Yummy</title>
+</head>
+<body>
+
+    <!-- start aside  -->
+    <aside  id="sideBar">
+        <!-- start first side -->
+        <nav class="navItem">
+            <ul>
+                <li><a href="#" id="search" class="linkItem search" onclick="searchHandle()">Search</a></li>
+                <li><a href="#" id="categories" class="linkItem" onclick="getCategories()">Categories</a></li>
+                <li><a href="#" id="areas" class="linkItem"  onclick="getAreas()">Area</a></li>
+                <li><a href="#" id="ingredients" class="linkItem" onclick="getIngredients()">Ingredients</a></li>
+                <li><a href="#" id="contactUs" class="linkItem" onclick="displayContact()">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-contact">
+                <div class="nav-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="copy-right">
+                    <p>Copyright Â© 2023 All Rights Reserved.</p>
+                </div>
+            </div>
+        </nav>
+        <!-- end first side  -->
+
+         <!-- start second side  -->
+         <div class="control-setting">
+            <div class="logo-setting">
+                <img src="image/logo.png" alt="logo-img" class="logo"/>
+            </div>
+            <div class="base-icon-control">
+                <i class="fa-solid fa-bars fa-2x " id="bars-control"></i>
+            </div>
+            <div class="second-icon-control">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+        <!-- end second side  -->
+    </aside>
+    <!-- end aside -->
+    
+    
+    <!-- start meals home section -->
+    <div class="home">
+        <div class="container">
+            <div class="search-inputs" >
+
+            </div>
+
+            <div id="home-meals" >
+            
+            </div>
+        </div>
+    </div>
+    <!-- end meals home section -->
+
+    <div id="loader" class="loader">
+        <div class="loader-circle"></div>
+
+    </div>
+
+            
+    <script src="js/main.js"></script>
+</body>
+</html>
